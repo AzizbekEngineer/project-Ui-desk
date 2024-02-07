@@ -1,0 +1,134 @@
+.cooked {
+  background: var(--secondaryColar);
+  padding: 50px 0;
+}
+
+.cooked__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.cooked__left,
+.cooked__right {
+  width: calc(50% - 10px);
+}
+
+.cooked__title {
+  max-width: 366px;
+  padding-bottom: 20px;
+  font-size: 54px;
+  list-style: 65px;
+  color: var(--primaryColar);
+}
+
+.cooked__desc {
+  font-size: 22px;
+  list-style: 34px;
+  padding-bottom: 20px;
+  color: var(--primaryColar);
+  opacity: 0.7;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.checkbox__desc {
+  margin-bottom: 10px;
+  color: var(--primaryColar);
+}
+
+.cooked__circle {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: #e1f2e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cooked__circle .cooked__img {
+  width: 100%;
+  height: 100%;
+}
+
+.cooked__right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 80px;
+}
+
+.cooked__left-img {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100px;
+  height: 80px;
+}
+
+@media (max-width: 1000px) {
+  .cooked__circle {
+    width: 350px;
+    height: 350px;
+  }
+  .cooked__left-img {
+    top: 50px;
+  }
+
+  .cooked__title {
+    font-size: 36px;
+    list-style: 35px;
+  }
+
+  .cooked__desc {
+    font-size: 18px;
+    list-style: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .cooked__left,
+  .cooked__right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .cooked__circle {
+    width: 250px;
+    height: 250px;
+  }
+  .cooked__right-img,
+  .cooked__left-img {
+    display: none;
+  }
+  .cooked__title {
+    font-size: 25px;
+    list-style: 25px;
+  }
+
+  .cooked__desc {
+    font-size: 16px;
+    list-style: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cooked__circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.light {
+  --primaryColar: white;
+  --secondaryColar: black;
+}

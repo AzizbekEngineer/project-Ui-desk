@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 15px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bactop {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  bottom: 20px;
+  right: 20px;
+  background: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.show-bactop {
+  display: flex !important;
+}

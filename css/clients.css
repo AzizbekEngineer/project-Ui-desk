@@ -1,0 +1,98 @@
+.clients {
+  background: #fcfcfc;
+  padding: 50px 0;
+}
+
+.clients__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 54px;
+  list-style: 65px;
+  color: var(--primaryColar);
+}
+
+.clients__cards {
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__card {
+  width: calc(50% - 15px);
+  padding: 20px;
+  box-shadow: 3px 15px 35px 0px #787dad0f;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.client__card-auther {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.avatar__infos-title,
+.avatar__infos-desc {
+  color: var(--primaryColar);
+}
+
+.avatar__infos-desc {
+  padding: 8px 0;
+  opacity: 0.7;
+}
+
+.client__card-desc {
+  padding: 20px 0 10px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--primaryColar);
+  opacity: 0.7;
+}
+
+.slides {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: var(--primaryColar);
+}
+
+.fa-solid:hover {
+  color: green;
+}
+
+
+
+@media (max-width: 1000px) {
+  .clients__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .clients__title {
+    font-size: 36px;
+    list-style: 30px;
+  }
+}
+
+.light {
+  --primaryColar: white;
+  --secondaryColar: black;
+}
+
+.light .clients,
+.light .clients__card {
+  background: black;
+}
